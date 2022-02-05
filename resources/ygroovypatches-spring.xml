@@ -6,4 +6,8 @@
 
     <bean id="ygroovypatchesSystemSetup" class="ygroovypatchespackage.setup.YGroovypatchesSystemSetup"/>
 
+    <alias name="ygroovypatchesCurrentEnvironmentProvider" alias="currentEnvironmentProvider"/>
+    <bean id="ygroovypatchesCurrentEnvironmentProvider" parent="defaultCurrentEnvironmentProvider"
+          class="ygroovypatchespackage.context.patch.YGroovypatchesCurrentEnvironmentProvider"/>
+
 </beans>
