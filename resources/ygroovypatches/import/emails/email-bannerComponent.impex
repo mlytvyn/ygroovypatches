@@ -1,0 +1,17 @@
+UPDATE GenericItem[processor = de.hybris.platform.commerceservices.impex.impl.ConfigPropertyImportProcessor]; pk[unique = true]
+
+$emailResource = $config-emailResourceValue
+
+# will be replaced with context Param set via GlobalContextImportEmailComponentTemplateAction
+#$siteUid = $config-DUMMY.site.uid
+$rendererCode = $siteUid-bannerComponent-template
+$translator = de.hybris.platform.commerceservices.impex.impl.FileLoaderValueTranslator
+$template = email-bannerComponentTemplate.vm
+
+INSERT_UPDATE RendererTemplate; code[unique = true]; contextClass  ; rendererType(code)
+                              ; $rendererCode      ; java.util.Map ; velocity
+
+UPDATE RendererTemplate; code[unique = true]; templateScript[lang = en, translator = $translator]
+                       ; $rendererCode      ; $emailResource/$template
+
+# TODO: add other language UPDATEs based on project's lang.packs property

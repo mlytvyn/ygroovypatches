@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
+
+    <extension abstractclassprefix="Generated" classprefix="YGroovypatches" managername="YGroovypatchesManager"
+               managersuperclass="de.hybris.platform.jalo.extension.Extension" name="ygroovypatches" usemaven="true">
+        <requires-extension name="groovypatches"/>
+
+        <coremodule generated="true" manager="ygroovypatchespackage.jalo.YGroovypatchesManager" packageroot="ygroovypatchespackage"/>
+
+        <meta key="extgen-template-extension" value="true"/>
+
+    </extension>
+
+</extensioninfo>
