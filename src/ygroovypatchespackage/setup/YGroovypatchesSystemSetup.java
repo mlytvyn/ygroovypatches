@@ -1,6 +1,6 @@
 package ygroovypatchespackage.setup;
 
-import ygroovypatchespackage.constants.TsgroovypatchesConstants;
+import ygroovypatchespackage.constants.YGroovypatchesConstants;
 import com.github.mlytvyn.patches.groovy.setup.GroovyPatchesSystemSetup;
 import de.hybris.platform.core.initialization.SystemSetup;
 import de.hybris.platform.core.initialization.SystemSetupContext;
