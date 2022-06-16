@@ -1,11 +1,8 @@
-Put Releases and related patches in this folder
+Put Patch specific impexes in this folder. It is preferable to have unique name prefix which will represent order. For example four char integer can be used.
 
 Sample structure:
 
 ```
-20220125/HYB-1/root.impex
-20220125/HYB-1/another.impex
-20220125/HYB-1/SITE/site.impex
-20220125/HYB-1/STORE/store.impex
-20220125/HYB-1/SOLR/solr.impex
+<optional group>/20220125/0001_HYB-1.groovy
+<optional group>/20220125/0002_HYB-2.groovy
 ```
