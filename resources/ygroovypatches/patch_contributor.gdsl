@@ -1,5 +1,0 @@
-def groovletContext = context(filetypes: ['groovy'], scope: scriptScope())
-
-contributor(groovletContext) {
-    property name: 'patchContext', type: 'com.github.mlytvyn.patches.groovy.context.patch.PatchContextDescriber'
-}
